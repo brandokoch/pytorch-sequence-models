@@ -1,0 +1,14 @@
+{
+  "configurations": {
+    "Python: Run current script": {
+      "adapter": "debugpy",
+      "configuration": {
+		"type": "python",
+		"stopOnEntry":true,
+		"python":"/usr/bin/python",
+        "request": "launch",
+        "program": "${file}"
+      }
+    }
+  }
+}
