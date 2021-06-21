@@ -30,7 +30,7 @@ def get_preprocess_funcs():
             return x_pro
 
         def postprocess_sent_clf(out):
-            return out
+            return torch.sigmoid(out).detach().cpu().numpy()
 
         return preprocess_sent_clf, postprocess_sent_clf
 
