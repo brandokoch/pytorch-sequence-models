@@ -1,14 +1,6 @@
 from models.sentiment_clf import SentimentClassifier, SentimentClassifier1
 from models.language_model import LanguageModel
 
-
-# Additional ideas
-# LM
-# awd lstm
-# trigger word detection
-# NMT
-# similarity (siamese)
-
 models = {
     "rnnsentimentclf": SentimentClassifier(3000, 100, 'RNN'),
     "grusentimentclf": SentimentClassifier(3000, 100, 'GRU'),
